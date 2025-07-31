@@ -1,0 +1,20 @@
+{
+  "name": "signin",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000R\u0000e\u0000s\u0000e\u0000r\u0000v\u0000e\u0000T\u0000a\u0000b\u0000l\u0000e\u0000\r\u0000 \u0000#\u0000 \u0000R\u0000e\u0000s\u0000e\u0000r\u0000v\u0000e\u0000T\u0000a\u0000b\u0000l\u0000e\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-validator": "^7.0.1",
+    "mongoose": "^8.3.2",
+    "nodemon": "^3.1.0"
+  },
+  "devDependencies": {}
+}

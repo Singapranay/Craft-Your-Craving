@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header class="p-3 text-bg-white">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="home.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                <span class="fs-4">EAZYDINE</span>
+              </a>
+    
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="home.html" class="nav-link px-2 text-dark">Home</a></li>
+              <li><a href="about.html" class="nav-link px-2 text-dark">About</a></li>
+              <li><a href="rest.html" class="nav-link px-2 text-secondary">Restaurants</a></li>
+              <li><a href="offers.html" class="nav-link px-2 text-dark">Offers</a></li>
+              <li><a href="contact.html" class="nav-link px-2 text-dark">Contact Us</a></li>
+            </ul>
+    
+           
+            <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+            </a>
+          </div>
+        </div>
+        
+      </header>
+
+
+      <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 ">
+        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+          <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Search for Restaurants in your city</h1>
+          <p class="lead">Discover the culinary delights of our city with our comprehensive restaurant guide. Quickly explore and find the perfect dining spot to satisfy your cravings,finding the perfect restaurant has never been easier. Dive in and start your gastronomic adventure today!</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+            <!-- <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Primary</button> -->
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle btn-lg px-4" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="selectCity">
+                  Select City
+              </button>
+              <ul class="dropdown-menu" id="cityDropdown">
+                  <li><button class="dropdown-item" type="button" onclick="changeCity('Hyderabad', 'Hyderabad')">Hyderabad</button></li>
+                  <li><button class="dropdown-item" type="button" onclick="changeCity('Mumbai', 'Mumbai')">Mumbai</button></li>
+                  <li><button class="dropdown-item" type="button" onclick="changeCity('Delhi', 'Delhi')">Delhi</button></li>
+                  <li><button class="dropdown-item" type="button" onclick="changeCity('Chennai', 'Chennai')">Chennai</button></li>
+                  <li><button class="dropdown-item" type="button" onclick="changeCity('Kolkata', 'Kolkata')">Kolkata</button></li>
+                  <li><button class="dropdown-item" type="button" onclick="changeCity('Bengalore', 'Bengalore')">Bengalore</button></li>
+              </ul>
+          </div>
+          <button type="button" class="btn btn-success btn-lg px-4" id="searchButton" onclick="navigate()">Search</button>
+          
+          </div>
+        </div>
+        <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+            <img class="rounded-lg-3" src="./images/ri.jpg" alt="" width="720">
+        </div>
+      </div>
+
+      <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">Top Restaurants in India</h1>
+            <p class="lead text-body-secondary">
+              Discover the flavors captured within this culinary album, curated by EazyDine. Dive into a symphony of delectable dishes, crafted with passion and precision. </p>
+           
+          </div>
+        </div>
+      </section>
+
+      <div class="album py-2 ">
+        <div class="container">
+    
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225"  src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D">
+                <div class="card-body">
+                  <h3 class=" fw-bold lh-1 text-body-emphasis">Bukhara</h3>
+                  <p class="card-text">Known for its inventive fusion of Indian flavors with global techniques, Indian Accent offers a contemporary dining experience that delights the senses.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="menu.html"><button type="button" class="btn btn-sm btn-outline-dark">Veg</button></a>
+                      <a href="menu1.html"><button type="button" class="btn btn-sm btn-outline-dark">Non-veg</button></a>
+                    </div>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Check In</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225"  src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D">
+                <div class="card-body">
+                  <h3 class=" fw-bold lh-1 text-body-emphasis">Indian Accent</h3>
+                  <p class="card-text">Renowned for its rustic charm and legendary North Indian cuisine, Bukhara is a culinary institution where the essence of traditional Indian cooking shines through..</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="menu.html"><button type="button" class="btn btn-sm btn-outline-dark">Veg</button></a>
+                      <a href="menu1.html"><button type="button" class="btn btn-sm btn-outline-dark">Non-veg</button></a>
+                    </div>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Check In</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225"  src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D">        <div class="card-body">
+                  <h3 class=" fw-bold lh-1 text-body-emphasis">Masala Library</h3>
+                  <p class="card-text">A gastronomic journey celebrating Indian cuisine's rich heritage, Masala Library combines molecular gastronomy with age-old recipes to create innovative dishes.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="menu.html"><button type="button" class="btn btn-sm btn-outline-dark">Veg</button></a>
+                      <a href="menu1.html"><button type="button" class="btn btn-sm btn-outline-dark">Non-veg</button></a>
+                    </div>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Check In</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col">
+              <div class="card shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225"  src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D">      <div class="card-body">
+                 
+                  <h3 class=" fw-bold lh-1 text-body-emphasis">Karavalli</h3>
+                  <p class="card-text">Offering an authentic taste of coastal Karnataka and Kerala, Karavalli takes diners on a culinary voyage with its exquisite seafood and regional specialties.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="menu.html"><button type="button" class="btn btn-sm btn-outline-dark">Veg</button></a>
+                          <a href="menu1.html"><button type="button" class="btn btn-sm btn-outline-dark">Non-veg</button></a>
+                    </div>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Check In</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225"  src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHJlc3RhdXJhbnR8ZW58MHx8MHx8fDA%3D">     <div class="card-body">
+                  <h3 class=" fw-bold lh-1 text-body-emphasis">Wasabi</h3>
+                  <p class="card-text"> A haven for sushi enthusiasts and lovers of Japanese cuisine, Wasabi by Morimoto serves up impeccably crafted dishes in a sleek and stylish setting.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="menu.html"><button type="button" class="btn btn-sm btn-outline-dark">Veg</button></a>
+                      <a href="menu1.html"><button type="button" class="btn btn-sm btn-outline-dark">Non-veg</button></a>
+                    </div>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Check In</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225"  src="https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fHJlc3RhdXJhbnR8ZW58MHx8MHx8fDA%3D">    <div class="card-body">
+                  <h3 class=" fw-bold lh-1 text-body-emphasis">Dum Pukht</h3>
+                  <p class="card-text">Translating to "slow cooking" in Urdu, Dum Pukht specializes in Awadhi cuisine, where the art of slow-cooking and royal flavors come together.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="menu.html"><button type="button" class="btn btn-sm btn-outline-dark">Veg</button></a>
+                      <a href="menu1.html"><button type="button" class="btn btn-sm btn-outline-dark">Non-veg</button></a>
+                    </div>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Check In</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col">
+              <div class="card shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225"  src="https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fHJlc3RhdXJhbnR8ZW58MHx8MHx8fDA%3D">         <div class="card-body">
+                  <h3 class=" fw-bold lh-1 text-body-emphasis">Farzi Cafe </h3>
+                  <p class="card-text">Pushing the boundaries of traditional Indian cuisine, Farzi Cafe offers a modern twist on classic dishes, blending innovation with familiar flavors for a unique.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="menu.html"><button type="button" class="btn btn-sm btn-outline-dark">Veg</button></a>
+                      <a href="menu1.html"><button type="button" class="btn btn-sm btn-outline-dark">Non-veg</button></a>
+                    </div>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Check In</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225"  src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fHJlc3RhdXJhbnR8ZW58MHx8MHx8fDA%3D">       <div class="card-body">
+                  <h3 class=" fw-bold lh-1 text-body-emphasis">Gaggan</h3>
+                  <p class="card-text">A trailblazer in the realm of progressive Indian cuisine, Gaggan in Bangkok showcases Chef Gaggan Anand's avant-garde creations that redefine Indian dining.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="menu.html"><button type="button" class="btn btn-sm btn-outline-dark">Veg</button></a>
+                      <a href="menu1.html"><button type="button" class="btn btn-sm btn-outline-dark">Non-veg</button></a>
+                    </div>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Check In</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225"  src="https://images.unsplash.com/photo-1586999768265-24af89630739?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fHJlc3RhdXJhbnR8ZW58MHx8MHx8fDA%3D">   <div class="card-body">
+                  <h3 class=" fw-bold lh-1 text-body-emphasis">Peshawri</h3>
+                  <p class="card-text">Known for its rustic ambiance and robust flavors, Peshawri specializes in North-West Frontier cuisine, featuring tandoori delicacies and hearty meat dishes.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="menu.html"><button type="button" class="btn btn-sm btn-outline-dark">Veg</button></a>
+                      <a href="menu1.html"><button type="button" class="btn btn-sm btn-outline-dark">Non-veg</button></a>
+                    </div>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Check In</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+    <div class="col mb-3">
+      <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+      <p class="text-body-secondary">© 2024</p>
+    </div>
+
+    <div class="col mb-3">
+
+    </div>
+
+    <div class="col mb-3">
+      <h5>Section</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="home.html" class="nav-link p-0 text-body-secondary">Home</a></li>
+        <li class="nav-item mb-2"><a href="rest.html" class="nav-link p-0 text-body-secondary">Restaurants</a></li>
+        <li class="nav-item mb-2"><a href="offers.html" class="nav-link p-0 text-body-secondary">offers</a></li>
+        <li class="nav-item mb-2"><a href="about.html" class="nav-link p-0 text-body-secondary">About</a></li>
+        <li class="nav-item mb-2"><a href="contact.html" class="nav-link p-0 text-body-secondary">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="col mb-3">
+      <h5>Section</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+      </ul>
+    </div>
+
+    <div class="col mb-3">
+      <h5>Section</h5>
+      <ul class="nav flex-column">
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+      </ul>
+    </div>
+  </footer>
+     <script src="index.js"></script>
+</body>
+</html>
